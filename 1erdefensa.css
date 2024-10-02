@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 150px 200px 300px 350px 200px;
+    grid-template-areas: 
+    "logo logo"
+    "menu menu"
+    "slider slider"
+    "contenido contenido"
+    "contenido2 contenido2"
+    "footer footer";
+    gap: 10px;
+    margin: 10px;
+}
+
+.grid-container > * {
+    border: 2px solid black;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: blue;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: aqua;
+}
+
+.slider {
+    grid-area: slider;
+    background-color: orange;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contenido2 {
+    grid-area: contenido2;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+.tabla {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(92, 187, 92);
+}
+
+.conjunto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+
+.titulo {
+    width: 100%;
+    height: 20%;
+    background-color: green;
+}
+
+.tarjeta {
+    width: 100%;
+    height: 40%;
+    background-color: lightgreen;
+}
+
+.tarjeta2 {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(196, 240, 196);
+}
+
+.tabla2 {
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+}
+
+.conjunto2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+
+.mapa {
+    width: 100%;
+    height: 40%;
+    background-color: blueviolet;
+}
+
+.formulario {
+    width: 100%;
+    height: 60%;
+    background-color: pink;
+}
+
+.foot {
+    width: 25%;
+    height: 100%;
+    background-color: brown;
+}
