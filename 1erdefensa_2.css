@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 150px 670px 600px 350px 200px;
+    grid-template-areas: 
+    "logo logo"
+    "menu menu"
+    "slider slider"
+    "contenido contenido"
+    "contenido2 contenido2"
+    "footer footer";
+}
+
+.logo {
+    grid-area: logo;
+    background-color: rgb(93, 219, 93);
+}
+
+.menu {
+    grid-area: menu;
+    background-color: black;
+}
+
+.slider {
+    grid-area: slider;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(emprendedor1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color: rgb(172, 213, 172);
+    display: flex;
+    flex-direction: row;
+}
+
+.contenido2 {
+    grid-area: contenido2;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+.tabla {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conjunto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.titulo3 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: titulos;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.tarjeta {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tarjeta2 {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(196, 240, 196);
+}
+
+.tabla2 {
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+}
+
+.conjunto2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+
+.mapa {
+    width: 100%;
+    height: 40%;
+    background-color: blueviolet;
+}
+
+.formulario {
+    width: 100%;
+    height: 60%;
+    background-color: pink;
+}
+
+.foot {
+    width: 25%;
+    height: 100%;
+    background-color: brown;
+}
+
+
+
+
+.img {
+    width: 15%;
+    height: 100%;
+}
+
+.nav {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.a {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.a:hover {
+    transition: 0.3s;
+    transform: scale(2);
+}
+
+.titulo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.titulo2 {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    animation-name: titulos;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.img2 {
+    width: 100%;
+    height: 50%;
+}
+
+#img2 {
+    width: 100%;
+    height: 100%;
+}
+
+.parrafo {
+    width: 100%;
+    height: 30%;
+    padding:15px;
+}
+
+.img3 {
+    width: 50%;
+    height: 100%;
+}
+
+#img3 {
+    width: 100%;
+    height: 100%;
+}
+
+.parrafo2 {
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+@keyframes titulo {
+    0% {
+        font-size: 1.5em;
+        rotate: 0deg;
+    }
+    50%  {
+        font-size: 3em;
+        rotate: 180deg;
+    }
+    100% {
+        font-size: 2em;
+        rotate: 360deg;
+    }
+}
+
+@keyframes titulos {
+    0% {
+        color: white;
+    }
+    100% {
+        color: black;
+        font-size: 2em;
+    }
+}
